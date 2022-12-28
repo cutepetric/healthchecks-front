@@ -1,6 +1,6 @@
 export default async function fetcher(...args) {
-    console.log('NEXT_PUBLIC_APIKEY: ');
-    console.log(process.env.NEXT_PUBLIC_APIKEY);
+    console.log('NEXT_PUBLIC_APIKEY: ' + process.env.NEXT_PUBLIC_APIKEY);
+    console.log('NEXT_PUBLIC_APIBASEURL: ' + process.env.NEXT_PUBLIC_APIBASEURL);
     args[0] = process.env.NEXT_PUBLIC_APIBASEURL + args[0];
 
     args[1] = {
