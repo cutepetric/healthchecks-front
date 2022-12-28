@@ -1,5 +1,5 @@
 export default async function fetcher(...args) {
-    args[0] = process.env.NEXT_HC_API_BASE_URL + args[0];
+    args[0] = process.env.NEXT_PUBLIC_APIBASEURL + args[0];
 
     args[1] = {
         ...args[1],
